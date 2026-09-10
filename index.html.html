@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo</title>
+    <link rel="stylesheet" href="ex3.css">
+</head>
+<body>
+     <div class="sistema">
+
+        <h1>Sistema de orçamento</h1>
+
+        <label for="cliente">Nome do Cliente</label>
+        <input type="text" id="cliente">
+
+        <label for="produto">Produto</label>
+        <input type="text" id="produto">
+
+        <label for="preço">Preço unitário</label>
+        <input type="number" id="preço" step="0.01">
+
+        <label for="quantidade">Quantidade desejada</label>
+        <input type="number" id="quantidade">
+
+        <label for="estoque">Quantidade em estoque</label>
+        <input type="number" id="estoque">
+
+        <label for="cidadeInicial">Cidade inicial</label>
+        <input type="text" id="cidadeInicial">
+
+        <label for="cidadeFinal">Cidade final</label>
+        <input type="text" id="cidadeFinal">
+
+        <label for="distancia">Distância (km)</label>
+        <input type="number" id="distancia">
+
+        <label for="peso">Peso (kg)</label>
+        <input type="number" id="peso">
+
+        <label for="metrosCubicos">Metros cúbicos (m³)</label>
+        <input type="number" id="metrosCubicos" step="0.01">
+
+        <button onclick="analisarPedido()">
+            Analisar pedido
+        </button>
+
+        <div id="resultado">
+            Preencha os dados e clique em "Analisar pedido".
+        </div>
+
+        <div id="agradecimento" style="display: none;">
+    <h2>Pedido concluído! 🎉</h2>
+    <p>Obrigado pela preferência!</p>
+    <p>Agradecemos por realizar seu pedido conosco.</p>
+
+    <button onclick="novoPedido()">
+        Novo pedido
+    </button>
+</div>
+
+    </div>
+    <script src="exer.js"></script>
+    
+</body>
+</html>
